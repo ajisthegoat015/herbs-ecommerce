@@ -25,7 +25,13 @@ SECRET_KEY = 'django-insecure-h#*@vzd*#_qs0za#4gw1f*@&+hh!u3&ldh$^=^ywkf26@(97ff
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "herbs-ecommerce-1.onrender.com"  # Add your Render domain here
+]
+
+
 
 
 # Application definition
@@ -121,3 +127,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
